@@ -1,0 +1,522 @@
+@font-face 
+    font-family: myFont
+    src: url("TTCommons-Regular.ttf")
+@font-face 
+    font-family: myFontBold
+    src: url("TTCommons-Bold.ttf")
+@font-face 
+    font-family: myFontMedium
+    src: url("TTCommons-Medium.ttf")
+$bluedark: #0D0F35
+$bluelight: #3BBEFF
+$green: #23EAA4
+$grey: #484A68
+$white: #FFF
+$greyblue: #A2A3BD
+@mixin linearGradient 
+    background: linear-gradient(135deg, rgba(35,234,164,0.5) 15%, rgba(13,15,53,0.7) 90%)
+    -webkit-background-clip: text
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    text-fill-color: transparent
+* 
+    font-family: myFont
+    margin: 0px
+    padding: 0px
+    scroll-behavior: smooth
+ul
+    list-style: none
+li
+    display: inline
+    text-align: center
+a
+    text-decoration: none 
+.df-jc-sa
+    display: flex
+    justify-content: space-around
+.pos-abs
+    position: absolute
+.font-bold
+    font-family: myFontBold
+.font-medium
+    font-family: myFontMedium
+.z-i-3
+    z-index: -3
+.projects-half
+    height: 200px
+.w-75-center
+    width: 75%
+    margin: 0px auto
+.w-85-ceter
+    width: 85%
+    margin: 0px auto
+.margin-top
+    margin-top: 200px
+.padding-top
+    padding-top: 50px
+.big-title
+    text-align: center
+    color: $bluedark
+    font-family: "myFontBold"
+    font-size: 45px
+.section-title
+    color: $white
+    display: flex
+    align-items: center
+    h2
+        margin: 0px auto
+    .first-title-block
+        clip-path: polygon(25% 25%, 100% 25% , 75% 65%, 0% 65%)
+        background-color: $bluedark
+        background: linear-gradient(45deg, rgba(14,13,53,1) 30%, rgba(13,15,53,1) 70%)
+        width: 30%
+        height: inherit
+        z-index: -3
+    .second-title-block
+        clip-path: polygon(0% 0%, 75% 0% , 100% 80%, 25% 80%)
+        background-color: $green
+        background: linear-gradient(135deg, rgba(35,234,164,0) 30%, rgba(35,234,164,1) 70%)
+        height: inherit
+        width: 30%
+        z-index: -2
+.transition
+    transition: 0.4s
+#up
+    position: fixed
+    bottom: 20px
+    right: 20px
+    border-radius: 50%
+    font-size: 60px
+    &:hover
+        .fa-chevron-up
+            color: $bluelight !important
+    .fa-chevron-up
+        color: $bluedark !important
+header
+    logo
+        width: 15%
+        background: linear-gradient(0deg, rgba(255,255,255,0) 10%, rgba(255,255,255,1) 70%)
+        img
+            width: 100%        
+    nav
+        width: 60%
+        align-items: center
+        ul
+            width: 100%
+            li
+                line-height: 16px
+                font-family: "myFontMedium"
+                a
+                    color: $grey
+                    &:hover
+                        color: $bluelight
+    button
+        display: none
+main 
+    #design
+        z-index: -1
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.3) 100%)
+        width: 100%
+        height: 800px
+        top: 0px
+    #first-block
+        clip-path: polygon(0 0, 69% 28%, 69% 72%, 0% 100%)
+        height: 900px
+        width: 400px
+        left: 20px
+        top: -200px
+        background-color: $bluelight
+    #second-block
+        clip-path: polygon(31% 28%, 100% 0, 100% 100%, 31% 72%)
+        height: 600px
+        width: 350px
+        left: 350px
+        top: 150px
+        background-color:  $green
+    #third-block
+        clip-path: polygon(31% 0%, 100% 0, 100% 72%, 31% 100%)
+        height: 1000px
+        width: 400px
+        right: 150px
+        top: -200px
+        background-color: $bluelight
+    #fourth-block
+        clip-path: polygon(0 0, 40% 20%, 40% 100%, 0 80%)
+        height: 300px
+        width: 150px
+        right: 30px
+        top: 400px
+        background-color: $green
+        opacity: 80%
+    #welcome
+        padding-top: 50px
+        line-height: 100px
+        .h12
+            font-size: 50px
+        h3
+            color: $grey
+            font-size: 40px
+        #view-more
+            scroll-behaviour: smooth
+            margin: 30px auto
+            width: 15%
+            font-size: 23px
+            padding: 5px
+            background-color: $bluedark
+            border-radius: 20px
+            line-height: 30px
+            &:hover
+                background-color: $bluelight
+            a
+                color: $white
+    #projects
+        box-sizing: border-box
+        width: 85%
+        section
+            width: 45%
+            max-height: 1500px
+            .projects-half
+                padding: 50px 0px
+            article
+                margin-bottom: 80px
+                box-sizing: border-box
+                padding: 10px
+                &:hover
+                    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5)
+                    background: linear-gradient(135deg, rgba(35,234,164,0.5) 15%, rgba(13,15,53,0.7) 90%)
+                    p
+                        color: $white
+                    img
+                        box-shadow: none
+                h3
+                    margin-top: 30px
+                    font-size: 32px
+                    font-family: "myFontMedium"
+                    line-height: 42px
+                    color: $bluedark
+                p
+                    font-size: 16px
+                    font-family: "myFontMedium"
+                    line-height: 16px
+                    color: $greyblue
+                img
+                    width: 100%
+                    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5)
+    #skills
+        width: 85%
+        .projects-half
+            width: 40%
+            margin: 0px auto
+        #skill-list
+            margin-top: 50px
+            width: 100%
+        article
+            text-align: center
+            width: 12%
+            background-color: $grey
+            padding: 20px
+            background: $bluedark
+            color: $white
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5)
+            .fas
+                font-size: 80px
+            .fab
+                font-size: 80px
+            h4
+                font-size: 23px
+                margin: 10px 0px
+                color: $green
+            p
+                color: $bluelight
+    #about
+        width: 85%
+        margin-top: 100px
+        box-sizing: border-box
+        padding-bottom: 100px
+        .projects-half
+            width: 40%
+            margin: 0px auto
+        #image
+            width: 25%
+            box-sizing: border-box
+            padding: 10px
+            background: linear-gradient(135deg, rgba(35,234,164,0.5) 15%, rgba(13,15,53,0.7) 90%)
+            img
+                width: 100%
+                height: 100%
+        #about-me
+            width: 40%
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            h2
+                display: block
+                color: $bluedark
+                font-family: "myFontBold"
+                font-size: 40px
+            p
+                display: block
+                color: $bluedark
+                font-size: 22px
+                line-height: 42px
+                font-family: "myFontMedium"
+                mark
+                    color: $green
+                    background-color: $white
+                    font-family: "myFontBold"
+                    &:hover
+                        color: $bluelight
+    #footer
+        width: 85%
+        border-top: 1px solid $greyblue
+        margin: 0px auto
+        padding-bottom: 30px
+        padding-top: 50px 
+        border-bottom: 1px solid $greyblue 
+        #contact
+            width: 30%
+            input[type=text], input[type=email], textarea
+                max-width: 100%
+                font-family: myFontMedium
+                font-size: 18px
+                padding: 5px
+                margin-bottom: 12px
+                border: none
+                border-bottom: 1px solid #0D0F35
+            textarea
+                resize: none
+            form
+                display: flex
+                flex-direction: column
+            #button
+                width: 40%
+                padding: 5px
+                color: $white
+                margin: 20px auto
+                font-size: 23px
+                background-color: $bluedark
+                border-radius: 20px
+                border: none
+                &:hover
+                    background-color: $bluelight
+        .footer-block
+            h5
+                margin: 30px auto
+                font-size: 23px
+                line-height: 30px
+                color: $green
+            li
+                box-sizing: border-box
+                padding-left: 20px
+                display: block
+                text-align: left
+                margin: 10px 0px
+                color: $grey
+                mark
+                    color: $green
+                    background-color: $white
+                    font-family: "myFontBold"
+                a
+                    color: $grey
+                    &:hover
+                        color: $bluelight
+    #footer-rights
+        margin: 0px auto
+        width: 85%
+        padding: 20px 0px
+        align-items: center
+        #rights
+            width: 20%
+            text-align: center
+            p
+                display: inline
+                font-size: 13px
+                color: $bluedark
+        #soc , #links
+            font-size: 25px
+            width: 25%
+            li
+                margin: 30px 15px
+                a
+                    color: $greyblue
+                    &:hover
+                        color: $grey
+        mark
+            color: $green
+            background-color: $white
+            font-family: "myFontBold"
+
+@media only screen and (max-width: 1200px)
+    main
+        #second-block
+            display: none
+        #about
+            #author-content
+                margin-top: 30px
+                #image
+                    width: 35%
+        #skills
+            width: 100% 
+            article
+                width: 10%
+
+@media only screen and (max-width: 970px)
+    .first-title-block , .second-title-block
+        display: none
+    header
+            logo
+                width: 30%
+            nav
+                width: 70%
+    main
+        .projects-half
+            display: block
+            width: 100% !important
+            height: inherit
+            @include linearGradient
+        #welcome
+            font-size: 40px
+            padding-top: 30px
+            line-height: 70px
+            height: 200px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            h1 
+                display: inline
+            .h12
+                font-size: 40px
+            h3
+                font-size: 25px
+            #view-more
+                margin: 15px auto
+                width: 25%
+                p
+                    font-size: 18px
+        #projects
+            flex-wrap: wrap
+            margin-top: 100px
+            section
+                width: 85%
+                article
+                    margin-bottom: 40px
+                    h3
+                        font-size: 25px
+        #skills
+            width: 85% !important
+            #skill-list
+                flex-wrap: wrap
+                article
+                    width: 23% !important
+                    margin-top: 30px
+        #about
+            width: 100%
+            #image
+                width: 35%
+            #about-me
+                width: 50%
+        #footer
+            .footer-block
+                width: 30%
+@media only screen and (max-width: 760px)
+    header
+        height: 100px
+        logo
+            width: 30%
+        nav
+            width: 70%
+    main
+        #first-block
+            display: none
+        #welcome
+            padding-top: 80px
+        #projects
+                flex-wrap: wrap
+        #skills
+            #skill-list
+                flex-wrap: wrap
+                article
+                    width: 30% !important
+        #about
+            #author-content
+                flex-direction: column
+                align-items: center
+                #image
+                    width: 50%
+                #about-me
+                    margin-top: 30px
+                    width: 80%
+                    text-align: center
+        #footer
+            flex-wrap: wrap
+            #contact
+                width: 80%
+            .footer-block
+                width: 40%
+                display: flex
+                flex-direction: column
+                align-items: center
+                ul
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+@media only screen and (max-width: 550px)
+        header
+            height: 100px
+            logo
+                width: 30%
+        header
+            nav
+                ul
+                    flex-direction: column
+                    margin: 10px
+        main
+            .projects-half
+                h2
+                    font-size: 40px 
+            #welcome
+                font-size: 30px
+                padding-top: 40px
+                line-height: 50px
+                height: 160px
+                #view-more
+                    width: 30%
+            #about
+                margin-top: 0px
+                #image
+                    width: 65% !important
+                #about-me
+                    h2
+                        font-family: "myFontMedium"
+                        margin-bottom: 20px
+                    p
+                       font-family: "myFont" 
+                       line-height: 30px
+            #skills
+                padding-top: 0px
+                #skill-list
+                    flex-wrap: wrap
+                    margin-top: 0px
+                    article
+                        width: 50% !important
+            #projects
+                padding-top: 0px
+                #up
+                    font-size: 40px !important
+                section
+                    article
+                        text-align: center
+            #footer
+                .footer-block
+                    width: 80%
+            #footer-rights
+                flex-wrap: wrap
+                #links
+                    order: 1
+                    width: 50%
+                #soc
+                    order: 2
+                    width: 50%
+                #rights
+                    order: 3
+                    width: 80%

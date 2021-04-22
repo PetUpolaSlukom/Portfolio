@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+	
+	Alright, you can look at this code - but only if you solve this maze within 10 seconds. 
+	Fair is fair.						
+	
+	Start.
+	
+	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   a
+	8   8               8               8           8                   8   8
+	8   8   aaaaaaaaa   8   aaaaa   aaaa8aaaa   aaaa8   aaaaa   aaaaa   8   8
+	8               8       8   8           8           8   8   8       8   8
+	8aaaaaaaa   a   8aaaaaaa8   8aaaaaaaa   8aaaa   a   8   8   8aaaaaaa8   8
+	8       8   8               8           8   8   8   8   8           8   8
+	8   a   8aaa8aaaaaaaa   a   8   aaaaaaaa8   8aaa8   8   8aaaaaaaa   8   8
+	8   8               8   8   8       8           8           8       8   8
+	8   8aaaaaaaaaaaaaaa8aaa8   8aaaa   8   aaaaa   8aaaaaaaa   8   aaaa8   8
+	8           8       8   8       8   8       8           8   8           8
+	8   aaaaa   8aaaa   8   8aaaa   8   8aaaaaaa8   a   a   8   8aaaaaaaaaaa8
+	8       8       8   8   8       8       8       8   8   8       8       8
+	8aaaaaaa8aaaa   8   8   8   aaaa8aaaa   8   aaaa8   8   8aaaa   8aaaa   8
+	8           8   8           8       8   8       8   8       8           8
+	8   aaaaa   8   8aaaaaaaa   8aaaa   8   8aaaa   8aaa8   aaaa8aaaaaaaa   8
+	8   8       8           8           8       8   8   8               8   8
+	8   8   aaaa8aaaa   a   8aaaa   aaaa8aaaa   8   8   8aaaaaaaaaaaa   8   8
+	8   8           8   8   8   8   8           8               8   8       8
+	8   8aaaaaaaa   8   8   8   8aaa8   8aaaaaaa8   aaaaaaaaa   8   8aaaaaaa8
+	8   8       8   8   8           8           8   8       8               8
+	8   8   aaaa8   8aaa8   aaaaa   8aaaaaaaa   8aaa8   a   8aaaaaaaa   a   8
+	8   8                   8           8               8               8   8
+	8   8aaaaaaaaaaaaaaaaaaa8aaaaaaaaaaa8aaaaaaaaaaaaaaa8aaaaaaaaaaaaaaa8aaa8
+	
+	End.
+	
+	-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đorđe Minić • Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/ico"/>
+	<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <meta name="keywords" content="portfolio, djordje, minic, web developer,web design"/>
+	<meta name="description" content="My name is Djordje Minic and this is my Portfolio, here you can find my Skillset and browse my Projects. If You feel I'm a right person, contact me! ">
+</head>
+<body>
+    <header class="df-jc-sa w-75-center">
+        <logo>
+            <img src="img/logo.png" alt="logo" />
+        </logo>
+        <nav class="df-jc-sa">
+            <ul class="df-jc-sa">
+                <li><a href='#projects' class="font-bold transition">projects</a></li>
+                <li><a href='#skills' class="font-bold transition">skills</a></li>
+                <li><a href='#about' class="font-bold transition">about</a></li>
+                <li><a href='#contact' class="font-bold transition">contact</a></li>
+            </ul>
+        </nav>
+        <button id="button">
+            <i class="fa fa-bars"></i>
+        </button>
+    </header>
+    <main>
+        <div id="design" class="pos-abs">
+        </div>
+        <div id="first-block" class="pos-abs z-i-3 hi">
+        </div>
+        <div id="second-block" class="pos-abs z-i-3 hi">
+        </div>
+        <div id="third-block" class="pos-abs z-i-3 hi">
+        </div>
+        <div id="fourth-block" class="pos-abs z-i-3 hi">
+        </div>
+        <div id='welcome' class="big-title transition">
+            <h1 class="font-bold">I'm Đorđe,</h1>
+            <h1 class="font-bold h12">web designer.</h1>
+            <h3>Welcome to my portfolio.</h3>
+            <div id="view-more" class="transition">
+                <a href="#projects" ><p>view more</p></a>
+            </div>
+        </div>
+        <div id="projects" class="w-75-center df-jc-sa margin-top padding-top">
+            <div id="up">
+                <a href="#" ><span class="fa fa-chevron-up transition"></span></a>
+            </div>
+            <section>
+                <div class="section-title big-title projects-half w-75-center">
+                    <h2>Projects</h2>
+                    <div class="first-title-block pos-abs z-i-3"></div>
+                    <div class="second-title-block pos-abs z-i-3">
+                    </div>
+                </div>
+                <a href="#projects" >
+                    <article class="transition">
+                        <img src="img/project1.jpg" alt="project" />
+                        <h3>Universal</h3>
+                        <p>DESIGN,DEVELOPMENT</p>
+                    </article>
+                </a>
+                <a href="#projects" >
+                    <article class="transition">
+                        <img src="img/project2.png" alt="project" />
+                        <h3>ArtificialReason</h3>
+                        <p>DESIGN,DEVELOPMENT</p>
+                    </article>
+                </a>
+            </section>
+            <section>
+                <a href="#projects" >
+                    <article class="transition">
+                        <img src="img/project3.jpg" alt="project" />
+                        <h3>Medilab</h3>
+                        <p>DESIGN,FRONT-END</p>
+                    </article>
+                </a>
+                <a href="#projects" >
+                    <article class="transition">
+                        <img src="img/project4.png" alt="project" />
+                        <h3>Bulenan</h3>
+                        <p>DESIGN,FRONT-END</p>
+                    </article>
+                </a>
+            </section> 
+        </div>
+        <div id="skills" class="w-75-center padding-top">
+            <div class="section-title big-title projects-half w-75-center">
+                <h2>Skills</h2>
+                <div class="first-title-block pos-abs z-i-3"></div>
+                <div class="second-title-block pos-abs z-i-3"></div>
+            </div>
+            <div id="skill-list" class=" w-75-center df-jc-sa">
+                <article class="transition">
+                    <span class="fab fa-html5"></span>
+                    <h4>html 5</h4>
+                    <p>90%</p>
+                </article>
+                <article class="transition">
+                    <span class="fab fa-css3"></span>
+                    <h4>css 3</h4>
+                    <p>90%</p>
+                </article>
+                <article class="transition">
+                    <span class="fab fa-adobe"></span>
+                    <h4>photoshop</h4>
+                    <p>50%</p>
+                </article class="transition">
+                <article>
+                    <span class="fas fa-database"></span>
+                    <h4>mySql</h4>
+                    <p>50%</p>
+                </article>
+                <article class="transition">
+                    <span class="fas fa-cogs"></span>
+                    <h4>seo</h4> 
+                    <p>80%</p>
+                </article>
+                <article class="transition">
+                    <span class="fab fa-contao"></span>
+                    <h4>c</h4>
+                    <p>60%</p>
+                </article>
+            </div>
+        </div>
+        <div id="about" class="w-75-center padding-top">
+            <div class="section-title big-title projects-half w-75-center transition">
+                <h2>About</h2>
+                <div class="first-title-block pos-abs z-i-3"></div>
+                <div class="second-title-block pos-abs z-i-3"></div>
+            </div>
+            <div id="author-content" class="df-jc-sa transition">
+                <div id="image" class="transition">
+                    <img src="img/autor.jpg" alt="Author" />
+                </div>
+                <div id="about-me">
+                    <h2>Đorđe Minić</h2>
+                    <p>Hi, I'm a student of <a href="https://www.ict.edu.rs/" target="_blanc"><mark>Visoka ICT</mark></a> College in Belgrade. In Nova Varoš 
+                        I finished elementary music school, but when programming entered my life I realized that that will be the path that I 
+                        want to take. Apart from my willingness to learn and upgrade my knowledge in IT, I'm fan of new experiences and challenges.
+                        Contact me, I'm always open for new projects. </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="w-75-ceter df-jc-sa">
+            <div id="contact">
+                <form action="#" method="GET">
+                    <input type="text" name="name" id="name" placeholder="Enter your name here">
+                    <input type="email" name="mail" id="mail" placeholder="Enter your e-mail here">
+                    <textarea name="text" id="text" cols="25" rows="6" placeholder="Enter your projects details here"></textarea>
+                    <input type="submit" id="button" class="transition" value="Send">
+                </form>
+            </div>
+            <div class="footer-block">
+                <h5>Navigation:</h5>
+                <ul>
+                    <li><a href='#' class="font-bold transition">home</a></li>
+                    <li><a href='#projects' class="font-bold transition">projects</a></li>
+                    <li><a href='#skills' class="font-bold transition">skills</a></li>
+                    <li><a href='#about' class="font-bold transition">about</a></li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h5>Contact:</h5>
+                <ul>
+                    <li class="font-medium">Visoka ICT</li>
+                    <li class="font-medium">Zdravka Čelara 16</li>
+                    <li class="font-medium">Palilula, Beograd</li>
+                    <li><mark class="mail-mark">mail: </mark><a href="mailto:djordje.minic.135.19@ict.edu.rs" class="font-bold transition">djordje.minic@ict</a></li>
+                    <li class="font-medium">phone: +381 69 131 24 20</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-rights" class="df-jc-sa w-75-center">
+            <div id="links">
+                    <ul>
+                        <li><a href='css/style.sass' target="_blanc" class="font-bold transition">SASS</a></li>
+                        <li><a href='css/style.css'target="_blanc"  class="font-bold transition">CSS</a></li>
+                        <li><a href='sitemap.xml' target="_blanc" class="font-bold transition">Sitemap</a></li>
+                    </ul>
+            </div>
+            <div id="rights">
+                <p><mark> &copy; </mark> 2020 Đorđe Minić &nbsp;135<mark> / </mark>19</p>
+            </div>
+            <div id="soc">
+                <ul class="df-jc-sa">
+                    <ul>
+						<li><a href="https://github.com/PetUpolaSlukom" target="_blanc"><i class="transition fab fa-github-alt"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/djordje-minic-088343198/" target="_blanc"><i class=" transition fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://twitter.com/petupola_slukom" target="_blanc"><i class="transition fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/pet_upola_slukom/" target="_blanc"><i class=" transition fab fa-instagram"></i></a></li>
+					</ul>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
